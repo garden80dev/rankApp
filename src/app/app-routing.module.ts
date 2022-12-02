@@ -6,19 +6,19 @@ import { ItemsComponent } from './items/items.component';
 const routes: Routes = [
   {path: 'items', component: ItemsComponent, children: [
     {
-      path: 'nav1',
+      path: 'Ferrari',
       component: ItemDetailComponent,
-      data: {id: '1'}
+      data: {id: 'ferrari'}
     },
     {
-      path: 'nav2',
+      path: 'Maserati',
       component: ItemDetailComponent,
-      data: {id: '2'} 
+      data: {id: 'maserati'} 
     },
     {
-      path: 'nav3',
+      path: 'Lamborghini',
       component: ItemDetailComponent,
-      data: {id: '3'}
+      data: {id: 'lamborghini'}
     }
   ]}
 ];

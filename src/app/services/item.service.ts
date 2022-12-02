@@ -18,7 +18,7 @@ export class ItemService {
     "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
     });
     return this.http.get(
-      `/allranks`,
+      `/${id}`,
       {
         headers: headers
       }
