@@ -81,6 +81,9 @@
               "browserTarget": "rankApp:build:development"
             }
           },
+          "options": {
+            "proxyConfig": "./proxy.conf.js"
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

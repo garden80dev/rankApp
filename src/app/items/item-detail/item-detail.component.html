@@ -1,0 +1,22 @@
+<nz-table *ngIf="items.length" #basicTable [nzData]="items">
+    <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Position</th>
+        <th>Temp</th>
+        <th>Omega</th>
+        <th>Speed</th>
+        <th>Car id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.timestamp }}</td>
+        <td>{{ data.position }}</td>
+        <td>{{ data.temp }}</td>
+        <td>{{ data.omega}}</td>
+        <td>{{ data.speed}}</td>
+        <td>{{ data.car_id}}</td>
+      </tr>
+    </tbody>
+  </nz-table>

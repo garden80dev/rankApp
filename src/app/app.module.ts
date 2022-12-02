@@ -12,13 +12,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemsComponent } from './items/items.component';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+import { ItemDetailComponent } from './items/item-detail/item-detail.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 registerLocaleData(it);
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsComponent
+    ItemsComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,11 @@ registerLocaleData(it);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NzTabsModule
+    NzTabsModule,
+    NzLayoutModule ,
+    NzBreadCrumbModule,
+    NzMenuModule,
+    NzTableModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: it_IT }
