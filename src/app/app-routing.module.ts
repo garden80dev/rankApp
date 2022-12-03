@@ -4,7 +4,7 @@ import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { ItemsComponent } from './items/items.component';
 
 const routes: Routes = [
-  {path: 'items', component: ItemsComponent, children: [
+  {path: '', component: ItemsComponent, children: [
     {
       path: 'Ferrari',
       component: ItemDetailComponent,
