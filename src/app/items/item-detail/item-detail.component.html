@@ -1,4 +1,4 @@
-<nz-table *ngIf="items.length" #basicTable [nzData]="items">
+<nz-table #basicTable [nzData]="items" [nzLoading]="tableLoading">
     <thead>
       <tr>
         <th>Timestamp</th>

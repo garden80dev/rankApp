@@ -17,6 +17,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
 import { ItemDetailComponent } from './items/item-detail/item-detail.component';
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 registerLocaleData(it);
 
@@ -36,7 +37,8 @@ registerLocaleData(it);
     NzLayoutModule ,
     NzBreadCrumbModule,
     NzMenuModule,
-    NzTableModule
+    NzTableModule,
+    NzSpinModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: it_IT }
